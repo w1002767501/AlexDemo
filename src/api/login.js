@@ -14,4 +14,12 @@ const forget = option => {
     ...option
   });
 };
-export { getCode, forget };
+
+// 登陆
+const login = loginInfo => {
+  return axios.post("/login", {
+    ...loginInfo
+  });
+};
+
+export { getCode, forget, login };
